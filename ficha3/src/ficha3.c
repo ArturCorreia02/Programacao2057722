@@ -87,7 +87,8 @@ int main(void) {
     if(operador == '/'){
         	resultado = operando1 / operando2;
         }
-    printf("%f %c %f = %f", operando1, operador, operando2, resultado);
+    printf("%.2f %c %.1f = %.1f", operando1, operador, operando2, resultado);
+
 
 
 
