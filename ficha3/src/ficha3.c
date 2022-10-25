@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main(void) {
 /*
@@ -68,7 +69,7 @@ int main(void) {
 	}
 */
 //==========================================alinea4=========================//
-
+/*
 	float operando1 = 2;
 	float operando2 = 4;
     char operador = '+';
@@ -78,22 +79,69 @@ int main(void) {
     if(operador == '+'){
     	resultado = operando1 + operando2;
     }
-    if(operador == '-'){
+    else if(operador == '-'){
         	resultado = operando1 - operando2;
         }
-    if(operador == '*'){
+    else if(operador == '*'){
         	resultado = operando1 * operando2;
         }
-    if(operador == '/'){
+    else if(operador == '/'){
         	resultado = operando1 / operando2;
         }
+    else if(operador == '^'){
+    		resultado =
+    }
     printf("%.2f %c %.1f = %.1f", operando1, operador, operando2, resultado);
+*/
+	//==========================================alinea5=========================//
+/*
 
+	int soma = 0;
+	int max =10;
+	int i = 1;
 
+	while(i <= max){
+		soma = soma + i;
+		i++;
+	}
+	printf("soma até %i é: %i", max, soma);
+*/
+	//==========================================alinea6=========================//
+/*
+	int multiplo = 5;
+	int max2 = 20;
+	int i2 = 0;
+	printf("%i \n", 1);
+	while(i2 < max2){
+		i2 += multiplo;
+		printf("%i \n", i2);
+	}
 
+	int multiplo = 5;
+	int max2 = 20;
+	int i2 = 1;
 
+	while(i2 < max2){
+		if(i2 % multiplo == 0){
+		printf("%i \n", i2);
+		}
+		i2++;
+	}
+*/
+	//==========================================alinea7=========================//
+/*
+	int n = 5;
+	int fatorial = 1;
 
+	while (n >= 1){
+		fatorial = fatorial * n;
+		n--;
+	}
+	printf("%i e: %i \n", 5,fatorial);
+*/
+	//==========================================alinea8=========================//
 
+	int ano = 1999;
 
 
 	return EXIT_SUCCESS;
