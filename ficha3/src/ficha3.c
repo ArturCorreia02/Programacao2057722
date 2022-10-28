@@ -141,8 +141,19 @@ int main(void) {
 */
 	//==========================================alinea8=========================//
 
-	int ano = 1999;
+	int ano = 100;
 
+	if(ano % 100 == 0){
+	}if(ano % 400 == 0){
+		puts("É um ano bissexto");
+	}else if(ano % 4 == 0){
+		puts("É um ano bissexto");
+	}
+	else if(ano % 100 != 0){
+		puts("Não é um ano bissexto");
+	}else {
+		puts("Não é um ano bissexto");
+	}
 
 	return EXIT_SUCCESS;
 }
