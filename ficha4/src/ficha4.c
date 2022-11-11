@@ -62,6 +62,16 @@ void drawtriangle(int height){
 		}
 }
 
+void drawBox(int width, int height){
+	for (int i = 0; i < height; i++){
+		for (int j =0; j < width; j++){
+			if (i == 0 || i == height -1 || j == 0 || j == width -1){
+				printf("%c", '*');
+
+			}
+		}
+	}
+}
 int main(void) {
 	/*
 	 //=========================== alinea1=======================================//
@@ -85,6 +95,7 @@ int main(void) {
 
 	drawtriangle(10);
 */
+
 
 	return EXIT_SUCCESS;
 }
