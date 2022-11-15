@@ -10,4 +10,7 @@
 
 void atm(float amount);
 
+int pin(int code);
+
+
 #endif /* FICHA5_H_ */

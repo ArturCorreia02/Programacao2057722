@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : ficha5.c
+ Name        : Fichas5.c
  Author      : 
  Version     :
  Copyright   : Your copyright notice
@@ -10,21 +10,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "ficha5.h"
 
 int main(void) {
-	void atm(float amount){
-		float balance = 5000;
-		if(balance >= amount){
-			float availeble = balance - amount;
-			printf("Levantou: %.2f€, saldo disponivel: %.2f€", amount, availeble);
-		}
-		else{
-			puts("Saldo insuficiente!!!");
-		}
-	}
-
-
+	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 	return EXIT_SUCCESS;
 }
-
