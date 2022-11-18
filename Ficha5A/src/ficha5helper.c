@@ -39,3 +39,57 @@ void validatePIN() {
 		}
 	}
 }
+//alinea3
+void CalcularTempoDeTrabalho(int he, int me, int se, int hs, int ms, int ss){
+
+	int hes = he * 3600 + me * 60 + se;
+	int hss = hs * 3600 + ms * 60 + ss;
+
+	int diff = hss - hes;
+
+	int horas = diff /3600;
+	int resto_horas = diff % 3600;
+
+	int minutos = resto_horas / 60;
+	int segundos = resto_horas % 60;
+
+	printf("Total em segundos: %i \n", diff);
+
+	printf("Horas %i ,", horas);
+
+	printf("Minutos %i ,",minutos);
+
+	printf("Segundos %i ,",segundos);
+}
+//alinea4
+void adivinha(){
+
+	int t = 0;
+
+	srand((unsigned) time(&t));
+
+	int segredo = rand() % 101;
+	int palpite = 0;
+
+	while (palpite != segredo){
+	puts("Indique o seu palpite!");
+	scanf("%i", &palpite);
+
+	if(palpite == segredo){
+		puts("ACERTOU!");
+		break;
+
+	}else{
+		if(palpite > segredo) {
+			puts("ACIMA!");
+		}else{
+			puts("ABAIXO!");
+			}
+		}
+	}
+}
+
+
+
+
+
