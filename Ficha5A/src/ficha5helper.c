@@ -25,7 +25,30 @@ void validatePIN() {
 	int code = 9999;
 	int PIN = 0;
 	while (PIN != code && tries < 3){
-		puts("introduza o pin");
+		puts("intr"
+				""
+				""
+				""
+				"v c                               "
+				""
+				" "
+				"     "
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				""
+				"oduza o pin");
 		scanf("%i", PIN);
 
 
