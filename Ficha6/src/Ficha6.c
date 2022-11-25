@@ -1,0 +1,44 @@
+/*
+ ============================================================================
+ Name        : Ficha6.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "ArrayUtils.h"
+
+int main(void) {
+
+//alinea1
+	int array[5] = {10, 6, 7, 6, 3};
+
+	int value = 8;
+	int size = 5;
+
+	int index = indexOf(array, value, size);
+
+	//printf("O indice do valor %i e: %i", value, index);
+
+
+	int indexMax = indexOfMax(array, size);
+	//printf("O indice do valor maximo e: %i", indexMax);
+
+	int indexMin = indexOfMin(array, size);
+		//printf("O indice do valor minimo e: %i", indexMin);
+
+	int max = Max(array, size);
+		printf("O valor maximo e: %i", Max);
+
+	int min = Min(array, size);
+			//printf("O valor minimo e: %i", min);
+
+
+
+
+	return EXIT_SUCCESS;
+}
