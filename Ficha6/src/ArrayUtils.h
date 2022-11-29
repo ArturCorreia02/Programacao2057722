@@ -20,6 +20,13 @@ int Max(int array[], int size);
 
 int Min(int array[], int size);
 
+float average(int array[], int size);
+
+float variance (int array[], int size);
+
+float standerdDeviation(int array[], int size);
+
+
 
 
 #endif /* ARRAYUTILS_H_ */

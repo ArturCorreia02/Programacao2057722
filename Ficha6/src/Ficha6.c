@@ -37,6 +37,16 @@ int main(void) {
 	int min = Min(array, size);
 			//printf("O valor minimo e: %i", min);
 
+	float avg = average(array, size);
+		//printf("O valor da media é %f", avg);
+
+	float var = variance(array, size);
+			//printf("O valor da variancia é %f", var);
+
+	float std = standerdDeviation(array, size);
+		printf("O valor do desvio padrão é %f", std);
+
+
 
 
 

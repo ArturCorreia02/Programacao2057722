@@ -6,6 +6,8 @@
  */
 
 #include "ArrayUtils.h"
+#include <math.h>
+
 
 //alinea1
 int indexOf (int array[], int value, int size){
@@ -68,8 +70,40 @@ int Min(int array[], int size){
 	return array[indexOfMin(array, size)];
 }
 
+float average(int array[], int size){
+
+	float sum = 0;
+
+	for(int i = 0; i < size; i++){
+	sum += array[i];
+	float avg = sum / size;
+	return avg;
+
+	}
+}
+
+float variance (int array[], int size){
+
+	float var = 0;
+	float avg = average(array, size);
+
+	for(int i = 0; i < size; i++){
+		var += pow(array[i] - avg, 2);
 
 
+	}
+	return var;
+
+}
+
+float standerdDeviation(int array[], int size){
+
+	float var = variance(array, size);
+	float std = sqrt(var);
+	return std;
+
+
+}
 
 
 
