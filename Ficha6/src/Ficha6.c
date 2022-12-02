@@ -22,7 +22,7 @@ int main(void) {
 
 	int index = indexOf(array, value, size);
 
-	//printf("O indice do valor %i e: %i", value, index);
+	printf("O indice do valor %i e: %i", value, index);
 
 
 	int indexMax = indexOfMax(array, size);
@@ -32,7 +32,7 @@ int main(void) {
 		//printf("O indice do valor minimo e: %i", indexMin);
 
 	int max = Max(array, size);
-		printf("O valor maximo e: %i", Max);
+		//printf("O valor maximo e: %i", Max);
 
 	int min = Min(array, size);
 			//printf("O valor minimo e: %i", min);
@@ -44,7 +44,7 @@ int main(void) {
 			//printf("O valor da variancia é %f", var);
 
 	float std = standerdDeviation(array, size);
-		printf("O valor do desvio padrão é %f", std);
+		//printf("O valor do desvio padrão é %f", std);
 
 
 
