@@ -8,6 +8,7 @@
 #ifndef STRINGUTILS_H_
 #define STRINGUTILS_H_
 
+
 void reveseString(char str[]);
 
 int indiceChar(char str[], char charcter);
