@@ -10,5 +10,8 @@
 
 void displayMenu();
 void displayInstructions();
+void play();
+void displayBoard(char board[]);
+static const char* getRandomWord();
 
 #endif /* FORCAUTYILS_H_ */

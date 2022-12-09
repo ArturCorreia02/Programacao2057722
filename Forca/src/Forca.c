@@ -12,34 +12,43 @@
 #include <stdlib.h>
 #include "ForcaUtyils.h"
 
+static const char* getRandomWord(){
+	FILE *fp;
+	fp = fopen("Secrets.txt", "r");
+	char buff[60];
+	while (fgets(buff, 60, fp) != NULL){
+		printf("%s", buff);
+	}
+	fclose(fp);
+	return"";
+}
 int main(void) {
 
 	puts("Bem-vindo ao Jogo da Forca");
 	int menu;
-while(menu != 4){
-	displayMenu();
-	puts("Escolha uma opção:");
-	scanf("%i", &menu);
+	while (menu != 4) {
+		displayMenu();
+		puts("Escolha uma opção:");
+		scanf("%i", &menu);
 
-	switch(menu){
-	case 1 :
-		displayInstructions();
-		break;
-	case 2 :
-		puts("Jogar");
-		break;
-	case 3 :
-		puts("Pontuação");
-		break;
-	case 4 :
-		puts("Sair");
-		break;
-	default :
-		puts("Opção inválida");
+		switch (menu) {
+		case 1:
+			displayInstructions();
+			break;
+		case 2:
+			puts("Jogar");
+			play();
+			break;
+		case 3:
+			puts("Pontuação");
+			break;
+		case 4:
+			puts("Sair");
+			break;
+		default:
+			puts("Opção inválida");
+		}
 	}
-}
-
-
 
 	return EXIT_SUCCESS;
 }
