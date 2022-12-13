@@ -11,6 +11,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ForcaUtyils.h"
+#include <locale.h>
+
+
 
 static const char* getRandomWord(){
 	FILE *fp;

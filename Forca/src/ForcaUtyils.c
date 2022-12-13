@@ -31,7 +31,7 @@ void play() {
 
 	int lives = 8;
 	char board[12];
-	char secret[12] = "hello";
+	char secret[12] = "Secrets.txt";
 	int len = strlen(secret);
 	for (int i = 0; i < len; i++) {
 		board[i] = '_';
@@ -54,11 +54,11 @@ void play() {
 
 		if (count == 0) {
 			lives--;
-			printf("Falhou!!! Tem %i", lives);
+			printf("Falhou!!! Tem %i vidas\n", lives);
 		}
 	}
 }
-displayBoard(char board[]) {
+void displayBoard(char board[]) {
 	int len = strlen(board);
 	for (int i = 0; i < len; i++) {
 		printf("%c ", board[i]);
