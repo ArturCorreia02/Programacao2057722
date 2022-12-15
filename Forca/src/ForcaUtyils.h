@@ -12,6 +12,7 @@ void displayMenu();
 void displayInstructions();
 void play();
 void displayBoard(char board[]);
-static const char* getRandomWord();
+const char* getRandomWord();
+void displayscore();
 
 #endif /* FORCAUTYILS_H_ */

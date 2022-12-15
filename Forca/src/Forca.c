@@ -12,20 +12,34 @@
 #include <stdlib.h>
 #include "ForcaUtyils.h"
 #include <locale.h>
-
+#include <string.h>
 
 
 static const char* getRandomWord(){
+
+	int t = 0;
+
+			srand((unsigned) time(&t));
+
+
+			//int index = 0;
+
+	int random = rand() % 3;
 	FILE *fp;
 	fp = fopen("Secrets.txt", "r");
 	char buff[60];
+	int i = 0;
+	char secret[12];
 	while (fgets(buff, 60, fp) != NULL){
-		printf("%s", buff);
+		buff[strcspn(buff,"\n")] = '\0';
 	}
 	fclose(fp);
 	return"";
 }
 int main(void) {
+
+	const char* secret = getRandomWord();
+	printf("%i \n", strlen(secret));
 
 	puts("Bem-vindo ao Jogo da Forca");
 	int menu;

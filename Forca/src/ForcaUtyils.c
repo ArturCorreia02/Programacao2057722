@@ -6,6 +6,9 @@
  */
 
 #include "ForcaUtyils.h"
+#include <stdio.h>
+#include <string.h>
+
 
 void displayMenu() {
 	puts("=====================================");
@@ -29,9 +32,13 @@ void displayInstructions() {
 
 void play() {
 
+	/*puts("Introduza o seu nome:");
+	char nome[12];
+	scanf("%c",nome);*/
+
 	int lives = 8;
 	char board[12];
-	char secret[12] = "Secrets.txt";
+	char secret[12] = const char* getRandomWord();
 	int len = strlen(secret);
 	for (int i = 0; i < len; i++) {
 		board[i] = '_';
@@ -63,5 +70,11 @@ void displayBoard(char board[]) {
 	for (int i = 0; i < len; i++) {
 		printf("%c ", board[i]);
 	}
+
+}
+void displayscore(){
+
+
+
 
 }
