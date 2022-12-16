@@ -19,6 +19,9 @@ void displayMenu() {
 	puts("=====================================");
 
 }
+int compereString(char str1[], char str2[]){
+	return strcmp(str1, str2);
+}
 
 void displayInstructions() {
 	printf(
@@ -27,7 +30,7 @@ void displayInstructions() {
 					"A cada letra errada, é desenhada uma parte do corpo do boneco que pendura numa forca.\n"
 					"O jogo apenas termina de duas maneiras:\n"
 					"Com o acertar da palavra;\n"
-					"Ou perdendo as vidas todas.");
+					"Ou perdendo as vidas todas.\n");
 }
 
 void play() {
@@ -37,25 +40,39 @@ void play() {
 	scanf("%c",nome);*/
 
 	int lives = 8;
-	char board[12];
-	char secret[12] = const char* getRandomWord();
+
+	char secret[12] = "secret";
+
 	int len = strlen(secret);
+
+	char board[len];
+
+	int count = 0;
+
+	int tries = 6;
+
+	char guess;
+
+	int comp = 1;
+
 	for (int i = 0; i < len; i++) {
 		board[i] = '_';
 	}
 
-	while (lives != 0) {
+	while (tries > 0 || compareString(board, secret) == 0){
+
 
 		displayBoard(board);
 
 		char guess;
 		puts("Introduza jogada:");
 		scanf(" %c", &guess);
-		int count = 0;
+
 		for (int i = 0; i < len; i++) {
-			if (secret[i] == guess) {
+			if (guess == secret[12]) {
 				board[i] = guess;
 				count++;
+				printf("Acertou!!! Tem %i vidas\n",lives)
 			}
 		}
 
@@ -75,6 +92,28 @@ void displayBoard(char board[]) {
 void displayscore(){
 
 
+}
 
+int validateGame(){
 
+	int len = strlen(secret);
+		for (int i = 0; i < len; i++) {
+			if(!guess1(secret[i])){
+				return 0;
+			}
+	}
+		return 1;
+}
+
+int guess1(char letra) {
+
+	int acertou = 0;
+	for(int j = 0; j < count; j++) {
+		if(chutes[j] == letra) {
+			acertou = 1;
+			break;
+		}
+	}
+
+	return acertou;
 }

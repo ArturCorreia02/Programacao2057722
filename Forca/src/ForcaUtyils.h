@@ -9,10 +9,17 @@
 #define FORCAUTYILS_H_
 
 void displayMenu();
+
 void displayInstructions();
+
 void play();
+
 void displayBoard(char board[]);
-const char* getRandomWord();
-void displayscore();
+
+//const char* getRandomWord();
+
+//void displayscore();
+
+int validateGame();
 
 #endif /* FORCAUTYILS_H_ */
