@@ -1,5 +1,10 @@
-Artur : 16 
-Helder : 10 
-Diogo : 12 
-Magalhaes : 17 
-Media : 13.750000
+texto 
+Ipsum 
+texto 
+vindo 
+vindo 
+padrão 
+impressão 
+tipográfica 
+modelo 
+Ipsum 

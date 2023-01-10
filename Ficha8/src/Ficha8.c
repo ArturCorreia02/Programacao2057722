@@ -81,15 +81,24 @@ void readGraades(){
 	}
 	fclose(fp);
 }
-
-
-
+void randomWord(){
+	FILE *fp;
+			fp = fopen("grades.txt", "w");
+	char words[10][20] = {"Lorem", "Ipsum", "texto", "modelo", "indústria", "tipográfica", "impressão", "vindo", "texto", "padrão"};
+		int t = 0;
+		srand((unsigned) time(&t));
+		for(int i = 0; i < 10 ; i++){
+			int random = rand() % 10;
+			fprintf(fp, "%s \n", words[random]);
+		}
+}
 int main(void) {
 	//readFileByChar();
 	//readByLine();
 	//countLine();
 	//writeGrades();
-	readGraades();
+	//readGraades();
+	randomWord();
 
 	return EXIT_SUCCESS;
 }
